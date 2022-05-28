@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>监视表单的提交事件   submit     on</title>
+    <script src="./lib/jquery.js"></script>
+</head>
+<body>
+    <form action="/login" id="f1">
+        <input type="text" name="user_name"/>
+        <input type="password" name="password"/>
+        <button type="submit">你要提交吗？，确定好了在提交哦~</button>
+    </form>
+    <script>
+           //通过ajax
+//第一种方式  submit
+        // $(function(){
+        //     $('#f1').submit(function(){
+        //            alert("触发成功")
+        //     })
+        // })
+ //第二种   方式    on    
+        // $(function(){
+        //     $("#f1").on('submit',function(){
+        //        alert("监听到提交成功！")
+        //     })
+        // })
+          
+ //阻止表单的默认提交行为     e.preventdefault()
+        // $(function(){
+        //     $('#f1').submit(function(e){
+        //         alert("监听阻止默认事件action的提交地址")
+        //         e.preventDefault()   //阻止表单的默认提交行为  
+        //     })
+        // })       
+//快速获取表单的值  serialiize()    $(this)==$('#fi')的对象
+            // $(function(){
+            //     $('#f1').submit(function(e){
+            //         e.preventDefault()
+            //        var datar = $(this).serialize()
+            //         console.log(datar)                 
+            //     })
+            // })
+        
+
+    </script>
+</body>
+</html>
+
